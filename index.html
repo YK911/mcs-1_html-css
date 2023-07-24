@@ -5,25 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 & CSS3 Practice</title>
   </head>
-  <body>
-    <header>
-      <a href="">
-        <img src="./image/01-header/logo.svg" alt="logo" />
+  <body class="page">
+    <header class="header">
+      <a class="header-logo logo" href="">
+        <img class="logo-img" src="./image/01-header/logo.svg" alt="logo" />
         Product
       </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="">Customers</a></li>
-          <li><a href="">Resources</a></li>
+      <nav class="header-nav nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Resources</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
+      <ul class="header-auth">
+        <li class="header-auth-item">
+          <button class="header-auth-btn" type="button">Sign In</button>
+        </li>
+        <li class="header-auth-item">
+          <button class="header-auth-btn" type="button">Sign Up</button>
+        </li>
       </ul>
-      <img src="./image/01-header/drk-mode-btn.svg" alt="switcher" />
+      <img
+        class="header-theme-switcher"
+        src="./image/01-header/drk-mode-btn.svg"
+        alt="switcher"
+      />
     </header>
     <main>
       <section>
@@ -74,10 +90,31 @@
         </ul>
         <button type="button">SIGN UP NOW</button>
       </section>
-      <!-- #region 2  -->
-      <!-- #endregion 2  -->
+      <!-- Business management -->
+      <section class="section management">
+        <div class="container">
+          <div class="management-left-side">
+            <h2 class="section-title">
+              <span class="section-title-small"></span>
+            </h2>
+            <p class="management-desc"></p>
+            <ul class="management-list">
+              <li class="management-item">
+                <h3 class="management-caption"></h3>
+                <p class="management-text"></p>
+              </li>
+              <li class="management-item">
+                <h3 class="management-caption"></h3>
+                <p class="management-text"></p>
+              </li>
+            </ul>
+          </div>
+          <div class="management-right-side">
+            <img src="" alt="" class="management-img" />
+          </div>
+        </div>
+      </section>
 
-      <section></section>
       <section></section>
       <section></section>
       <section></section>
