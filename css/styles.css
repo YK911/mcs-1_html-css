@@ -6,6 +6,7 @@
   |============================
 */
 .page {
+  font-family: 'Poppins', sans-serif;
 }
 .section {
 }
@@ -58,38 +59,52 @@
 }
 /**
   |============================
-  | About styles
+  | Hero styles
   |============================
 */
 
 /**
   |============================
-  | Revies styles
+  | Business management styles
   |============================
 */
 /**
   |============================
-  | Management styles
+  | Customer support styles
   |============================
 */
-.management {
-}
-.management-left-side {
-}
-.management-desc {
-}
-.management-list {
-}
-.management-item {
-}
-.management-caption {
-}
-.management-text {
-}
-.management-right-side {
-}
-.management-img {
-}
-
-.main-title {
-}
+/**
+  |============================
+  | Collaboration styles
+  |============================
+*/
+/**
+  |============================
+  | Staff styles
+  |============================
+*/
+/**
+  |============================
+  | News feed styles
+  |============================
+*/
+/**
+  |============================
+  | Pricing styles
+  |============================
+*/
+/**
+  |============================
+  | Feedback styles
+  |============================
+*/
+/**
+  |============================
+  | Promo styles
+  |============================
+*/
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
