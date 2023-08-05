@@ -1,4 +1,19 @@
 :root {
+  /* Fonts */
+  --main-font: 'Poppins', sans-serif;
+  /* Text colors */
+  --primary-cl: #22343d;
+  --secondary-cl: #737373;
+  --accent-cl: #02897a;
+  --light-cl: #ffffff;
+  --dark-cl: #173a56;
+  /* Background colors */
+  --light-bg-cl: #ededed;
+  /* Others */
+  --items: 4;
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1150px 1fr; */
 }
 /**
   |============================
@@ -6,19 +21,88 @@
   |============================
 */
 .page {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
+  line-height: 1.75;
+  color: var(--primary-cl);
+
+  /* grid-column: 2/3; */
 }
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  /* Alternative */
+  /* display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; */
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+/* reset end */
 .section {
+  font-size: 20px;
 }
 .section-light {
 }
 .section-dark {
 }
+.section__title {
+  font-size: 32px;
+  line-height: 1.5;
+}
+.section__title-small {
+  font-size: 16px;
+}
+.container {
+  width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 .btn {
+  min-width: 110px;
+  min-height: 42px;
+  padding: 9px 24px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
-.btn-primary {
+.btn__primary {
+  background-color: var(--accent-cl);
+  color: var(--light-cl);
 }
-.btn-secondary {
+.btn__secondary {
+  color: var(--dark-cl);
+  border-color: #bcd0e5;
 }
 /* Logo */
 .logo {
@@ -45,24 +129,82 @@
 */
 .header {
 }
-.header-logo {
+.header__container {
+  display: flex;
+  align-items: center;
 }
-.header-nav {
+
+.header__logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: auto;
+
+  color: var(--dark-cl);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 0.93;
 }
-.header-auth {
+.header__logo-icon {
 }
-.header-auth-item {
+.header__nav {
 }
-.header-auth-btn {
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-right: 24px;
 }
-.header-theme-switcher {
+.header__nav-item {
+}
+.header__nav-link {
+  display: block;
+  padding: 26px 0;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-right: 23px;
+}
+.header__item {
+}
+.header__button-white {
+}
+.header__button-green {
+}
+.header__switcher {
 }
 /**
   |============================
   | Hero styles
   |============================
 */
-
+.hero {
+}
+.hero__container {
+}
+.container {
+}
+.hero__wrapper {
+}
+.hero__title {
+}
+.hero__subtitle {
+}
+.hero__button {
+}
+.hero__link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.hero__link-icon {
+}
+.hero__image {
+}
 /**
   |============================
   | Business management styles

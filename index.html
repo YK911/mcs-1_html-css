@@ -6,6 +6,11 @@
     <title>HTML and CSS Practice</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="./css/fonts.css" />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -39,10 +44,14 @@
         </nav>
         <ul class="header__list">
           <li class="header__item">
-            <button class="header__button-white" type="button">Sign In</button>
+            <button class="header__button btn btn__secondary" type="button">
+              Sign In
+            </button>
           </li>
           <li class="header__item">
-            <button class="header__button-green" type="button">Sign Up</button>
+            <button class="header__button btn btn__primary" type="button">
+              Sign Up
+            </button>
           </li>
         </ul>
         <img
@@ -63,7 +72,9 @@
               The most intuitive way to imagine your next user experience.
             </p>
             <div>
-              <button class="hero__button" type="button">Get started</button>
+              <button class="hero__button btn btn__primary" type="button">
+                Get started
+              </button>
               <a class="hero__link">
                 <img
                   class="hero__link-icon"
@@ -84,9 +95,11 @@
         </div>
       </section>
       <!-- Product -->
-      <section class="product">
+      <section class="product section">
         <div class="product__container container">
-          <h2 class="product__title">Product was Built Specifically for You</h2>
+          <h2 class="product__title section__title">
+            Product was Built Specifically for You
+          </h2>
           <ul class="product__list">
             <li class="product__item">
               <img
@@ -137,11 +150,15 @@
         </div>
       </section>
       <!-- Business management -->
-      <section class="management">
+      <section class="management section">
         <div class="management__container container">
           <div class="management__wrapper">
-            <p class="management__pretitle">Effortless Validation for</p>
-            <h2 class="management__title">Management</h2>
+            <h2 class="section__title">
+              <span class="section__title-small"
+                >Effortless Validation for</span
+              >
+              Management
+            </h2>
             <p class="management__subtitle">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -175,7 +192,7 @@
         </div>
       </section>
       <!-- Customer support -->
-      <section class="customer">
+      <section class="customer section">
         <div class="customer__container container">
           <div class="customer__wrapper">
             <img
@@ -186,8 +203,12 @@
             />
           </div>
           <div class="customer__wrap">
-            <p class="customer__pretitle">Easier decision making for</p>
-            <h2 class="customer__title">Customer Support</h2>
+            <h2 class="section__title">
+              <span class="section__title-small">
+                Easier decision making for
+              </span>
+              Customer Support
+            </h2>
             <p class="customer__subtitle">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -233,11 +254,13 @@
         </div>
       </section>
       <!-- Collaboration -->
-      <section class="collaborative">
+      <section class="collaborative section">
         <div class="collaborative__container container">
           <div class="collaborative__wrapper">
-            <p class="collaborative__pretitle">Optimisation for</p>
-            <h2 class="collaborative__title">Collaborative</h2>
+            <h2 class="section__title">
+              <span class="section__title-small"> Optimisation for </span>
+              Collaborative
+            </h2>
             <p class="collaborative__subtitle">
               Few would argue that, despite the advancements of feminism over
               the past three decades, women still face a double standard when it
@@ -271,9 +294,9 @@
         </div>
       </section>
       <!-- Staff -->
-      <section class="process">
+      <section class="process section">
         <div class="process__container container">
-          <h2 class="process__title">Quick & Easy Process</h2>
+          <h2 class="process__title section__title">Quick & Easy Process</h2>
           <p class="process__subtitle">
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
@@ -322,9 +345,9 @@
         </div>
       </section>
       <!-- News feed -->
-      <section class="strategies">
+      <section class="strategies section">
         <div class="strategies__container container">
-          <h2 class="strategies__title">Contents Strategies</h2>
+          <h2 class="strategies__title section__title">Contents Strategies</h2>
           <p class="strategies__subtitle">
             We focus on ergonomics and meeting you where you work. It's only a
             keystroke away.
@@ -385,9 +408,9 @@
         </div>
       </section>
       <!-- Pricing -->
-      <section class="price">
+      <section class="price section">
         <div class="price__container container">
-          <h2 class="price__title">Price Table</h2>
+          <h2 class="price__title section__title">Price Table</h2>
           <p class="price__subtitle">We offer competitive price</p>
           <ul class="price__list">
             <li class="price__item">
@@ -463,9 +486,9 @@
         </div>
       </section>
       <!-- Feedback -->
-      <section class="clients">
+      <section class="clients section">
         <div class="clients__container container">
-          <h2 class="clients__title">What Clients Say</h2>
+          <h2 class="clients__title section__title">What Clients Say</h2>
           <p class="clients__subtitle">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
@@ -475,27 +498,7 @@
               <div class="clients__wrapper">
                 <img
                   class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-stroke.svg"
+                  src="./images/icons/stars.svg"
                   alt="icon star"
                 />
               </div>
@@ -517,27 +520,7 @@
               <div class="clients__wrapper">
                 <img
                   class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-stroke.svg"
+                  src="./images/icons/stars.svg"
                   alt="icon star"
                 />
               </div>
@@ -559,27 +542,7 @@
               <div class="clients__wrapper">
                 <img
                   class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-fill.svg"
-                  alt="icon star"
-                />
-                <img
-                  class="clients__icon"
-                  src="./images/09-clients/star-stroke.svg"
+                  src="./images/icons/stars.svg"
                   alt="icon star"
                 />
               </div>
